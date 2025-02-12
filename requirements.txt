@@ -5,3 +5,4 @@ pygame
 streamlit
 keras
 streamlit-webrtc
+os
