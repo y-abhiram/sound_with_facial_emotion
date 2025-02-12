@@ -6,7 +6,8 @@ import time
 import streamlit as st
 from keras.models import load_model
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
-
+import os
+os.environ["SDL_AUDIODRIVER"] = "dummy"
 # Load the emotion detection model
 model_path = 'emotion_model.h5'
 model = load_model(model_path)
