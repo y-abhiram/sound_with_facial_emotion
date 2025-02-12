@@ -8,7 +8,7 @@ from keras.models import load_model
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 
 # Load the emotion detection model
-model_path = '/home/abhiram1289/emotion_model.h5'
+model_path = 'emotion_model.h5'
 model = load_model(model_path)
 
 # Emotion labels
@@ -16,13 +16,13 @@ emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surpri
 
 # Map emotions to music files
 emotion_songs = {
-    "Happy": "/home/abhiram1289/Music/[iSongs.info] 01 - Samajavaragamana.mp3",
-    "Sad": "/home/abhiram1289/Music/[iSongs.info] 02 - Bheem For Ramaraju.mp3",
-    "Angry": "/home/abhiram1289/Music/Jai Lava Kusa Naa Songs Ringtones.mp3",
-    "Surprise": "/home/abhiram1289/Music/[iSongs.info] 06 - Theme Of Kalki.mp3",
-    "Neutral": "/home/abhiram1289/Music/Jai Srinivasa Jai Venkatesa - Dvv Entertainments logo Song.mp3",
-    "Fear": "/home/abhiram1289/Music/Hanuman Chalisa.mp3",
-    "Disgust": "/home/abhiram1289/Music/[iSongs.info] 03 - Roar Of RRR.mp3"
+    "Happy": "[iSongs.info] 01 - Samajavaragamana.mp3",
+    "Sad": "[iSongs.info] 02 - Bheem For Ramaraju.mp3",
+    "Angry": "Jai Lava Kusa Naa Songs Ringtones.mp3",
+    "Surprise": "[iSongs.info] 06 - Theme Of Kalki.mp3",
+    "Neutral": "Jai Srinivasa Jai Venkatesa - Dvv Entertainments logo Song.mp3",
+    "Fear": "Hanuman Chalisa.mp3",
+    "Disgust": "[iSongs.info] 03 - Roar Of RRR.mp3"
 }
 
 # Initialize pygame mixer for playing music
