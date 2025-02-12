@@ -1,6 +1,6 @@
 opencv-python
 numpy
-tensorflow
+tensorflow-gpu
 pygame
 streamlit
 keras
